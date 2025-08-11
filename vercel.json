@@ -1,11 +1,9 @@
 {
-  "buildCommand": "cd frontend && npm install && npm run build:minimal",
+  "buildCommand": "cd frontend && npm ci && npm run build:minimal",
   "outputDirectory": "frontend/build",
-  "installCommand": "cd frontend && npm install",
+  "cleanUrls": true,
+  "trailingSlash": false,
   "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
