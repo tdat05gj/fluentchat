@@ -1,0 +1,69 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Production builds
+frontend/build/
+frontend/dist/
+build/
+dist/
+out/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Cache directories
+frontend/.cache/
+frontend/node_modules/.cache/
+.cache/
+.parcel-cache/
+
+# Logs
+*.log
+logs/
+
+# IDE and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Hardhat
+artifacts/
+cache/
+typechain/
+typechain-types/
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Temporary files
+*.tmp
+*.temp
+
+# Vercel
+.vercel
+
+# Next.js (if used)
+.next/
+
+# Misc
+*.tgz
+*.tar.gz

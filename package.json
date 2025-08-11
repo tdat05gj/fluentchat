@@ -11,7 +11,8 @@
     "node": "npx hardhat node",
     "clean": "npx hardhat clean",
     "frontend": "cd frontend && npm start",
-    "build": "cd frontend && npm run build",
+    "build": "cd frontend && npm run build:minimal",
+    "build:vercel": "cd frontend && npm install && npm run build:minimal",
     "dev": "concurrently \"npm run node\" \"npm run frontend\"",
     "setup": "npm install && cd frontend && npm install"
   },
