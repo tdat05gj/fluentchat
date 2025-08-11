@@ -22,10 +22,5 @@
         }
       ]
     }
-  ],
-  "functions": {
-    "frontend/build/static/**": {
-      "maxDuration": 30
-    }
-  }
+  ]
 }
