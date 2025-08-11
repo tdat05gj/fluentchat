@@ -1,4 +1,4 @@
 {
-  "buildCommand": "cd frontend && npm ci && npm run build:low-memory",
+  "buildCommand": "cd frontend && npm ci && npm run build:production",
   "outputDirectory": "frontend/build"
 }

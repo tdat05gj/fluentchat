@@ -21,6 +21,7 @@
     "build:direct": "node --max-old-space-size=4096 build-direct.js",
     "build:force": "chmod +x node_modules/.bin/react-scripts && node --max-old-space-size=4096 node_modules/.bin/react-scripts build",
     "build:low-memory": "GENERATE_SOURCEMAP=false node --max-old-space-size=2048 node_modules/.bin/react-scripts build",
+    "build:production": "DISABLE_ESLINT_PLUGIN=true GENERATE_SOURCEMAP=false node --max-old-space-size=2048 node_modules/.bin/react-scripts build",
     "build:memory": "node build-memory.js",
     "build:minimal": "node build-minimal.js",
     "test": "react-scripts test",
