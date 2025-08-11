@@ -1,0 +1,50 @@
+{
+  "name": "fluent-messaging-dapp",
+  "version": "1.0.0",
+  "description": "A production-ready Web3 messaging dApp on Fluent testnet",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run contracts/deploy.js --network fluent-testnet",
+    "deploy:local": "npx hardhat run contracts/deploy.js --network localhost",
+    "test": "npx hardhat test",
+    "node": "npx hardhat node",
+    "clean": "npx hardhat clean",
+    "frontend": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "dev": "concurrently \"npm run node\" \"npm run frontend\"",
+    "setup": "npm install && cd frontend && npm install"
+  },
+  "keywords": [
+    "web3",
+    "blockchain",
+    "messaging",
+    "dapp",
+    "fluent",
+    "ethereum",
+    "react"
+  ],
+  "author": "Fluent Messaging Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "@types/chai": "^4.2.0",
+    "@types/mocha": ">=9.1.0",
+    "chai": "^4.2.0",
+    "concurrently": "^8.2.2",
+    "ethers": "^6.9.2",
+    "hardhat": "^2.19.0",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solidity-coverage": "^0.8.1",
+    "typechain": "^8.3.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}

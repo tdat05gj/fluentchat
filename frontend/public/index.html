@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#007bff" />
+    <meta name="description" content="Fluent Chat - Decentralized messaging on Fluent blockchain network" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://rpc.testnet.fluent.xyz">
+    <link rel="preconnect" href="https://testnet.fluentscan.xyz">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💬</text></svg>">
+
+    <title>FluentChat - Decentralized Web3 Messaging</title>
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fluent-messenger.vercel.app/" />
+    <meta property="og:title" content="Fluent Messenger - Decentralized Web3 Messaging" />
+    <meta property="og:description" content="Send and receive messages on the Fluent blockchain network. Secure, decentralized, and permanent messaging." />
+    <meta property="og:image" content="%PUBLIC_URL%/social-preview.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://fluent-messenger.vercel.app/" />
+    <meta property="twitter:title" content="Fluent Messenger - Decentralized Web3 Messaging" />
+    <meta property="twitter:description" content="Send and receive messages on the Fluent blockchain network. Secure, decentralized, and permanent messaging." />
+    <meta property="twitter:image" content="%PUBLIC_URL%/social-preview.png" />
+  </head>
+  <body>
+    <noscript>
+      <div style="padding: 2rem; text-align: center; font-family: system-ui;">
+        <h2>🔧 JavaScript Required</h2>
+        <p>You need to enable JavaScript to use Fluent Messenger.</p>
+        <p>This dApp requires JavaScript for wallet integration and blockchain interaction.</p>
+      </div>
+    </noscript>
+    
+    <div id="root"></div>
+    
+    <!-- Service Worker for PWA (optional) -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('%PUBLIC_URL%/sw.js')
+            .then(function(registration) {
+              console.log('SW registered: ', registration);
+            }, function(registrationError) {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

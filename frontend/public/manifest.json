@@ -1,0 +1,28 @@
+{
+  "short_name": "Fluent Messenger",
+  "name": "Fluent Messenger - Decentralized Web3 Messaging",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💬</text></svg>",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' fill='%23007bff'/><text x='96' y='110' font-size='120' text-anchor='middle' fill='white'>💬</text></svg>",
+      "type": "image/svg+xml",
+      "sizes": "192x192"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' fill='%23007bff'/><text x='256' y='300' font-size='320' text-anchor='middle' fill='white'>💬</text></svg>",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#007bff",
+  "background_color": "#ffffff",
+  "description": "Decentralized messaging application on Fluent blockchain network",
+  "categories": ["communication", "social", "productivity"],
+  "orientation": "portrait-primary"
+}
