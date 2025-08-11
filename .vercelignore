@@ -27,22 +27,17 @@ logs/
 .DS_Store
 Thumbs.db
 
-# Hardhat
+# Hardhat (not needed for frontend)
 artifacts/
 cache/
 typechain/
+contracts/
+scripts/
+hardhat.config.js
 
-# Documentation and configs
+# Documentation
 README.md
 DEPLOYMENT.md
-hardhat.config.js
-scripts/
-contracts/
-
-# Source files (only build output needed)
-frontend/src/
-
-# Keep frontend/public/ because it contains index.html needed for build
 
 # Test files
 test/
