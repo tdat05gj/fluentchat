@@ -1,14 +1,24 @@
 #!/bin/bash
-# Fix permissions and build React app
-echo "Setting up build environment..."
+set -e
 
-# Ensure node_modules/.bin has proper permissions
-if [ -d "node_modules/.bin" ]; then
-    chmod +x node_modules/.bin/*
+echo "🔧 Setting up Node.js build environment..."
+
+# Clean install
+npm ci
+
+echo "🔧 Fixing permissions..."
+# Fix permissions for all binaries
+find node_modules/.bin -type f -exec chmod +x {} \; 2>/dev/null || true
+
+echo "🏗️ Building React app..."
+# Try multiple build methods
+if npx react-scripts build; then
+    echo "✅ Build successful with npx!"
+elif ./node_modules/.bin/react-scripts build; then
+    echo "✅ Build successful with direct path!"
+else
+    echo "❌ Build failed with both methods"
+    exit 1
 fi
 
-# Install dependencies with clean cache
-npm ci --no-optional
-
-# Build with explicit path
-./node_modules/.bin/react-scripts build
+echo "🎉 Build completed successfully!"
