@@ -20,9 +20,9 @@ try {
   
   // Try multiple build approaches
   const buildCommands = [
-    'npx --yes react-scripts build',
-    'node node_modules/react-scripts/scripts/build.js',
-    './node_modules/.bin/react-scripts build'
+    'node --max-old-space-size=4096 node_modules/.bin/react-scripts build',
+    'node --max-old-space-size=2048 node_modules/react-scripts/scripts/build.js',
+    'GENERATE_SOURCEMAP=false node --max-old-space-size=4096 node_modules/.bin/react-scripts build'
   ];
   
   for (let i = 0; i < buildCommands.length; i++) {

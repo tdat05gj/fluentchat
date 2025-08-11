@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { LangEn } from \"./lang-en.js\";\nexport const wordlists = {\n  en: LangEn.wordlist()\n};\n//# sourceMappingURL=wordlists-browser.js.map","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

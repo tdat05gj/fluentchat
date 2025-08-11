@@ -1,0 +1,1 @@
+{"ast":null,"code":"/* Do NOT modify this file; see /src.ts/_admin/update-version.ts */\n/**\n *  The current version of Ethers.\n */\nexport const version = \"6.15.0\";\n//# sourceMappingURL=_version.js.map","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

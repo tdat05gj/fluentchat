@@ -11,17 +11,21 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "serve": "^14.2.1",
+    "serve": "^14.2.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "GENERATE_SOURCEMAP=false react-scripts build",
-    "build:alt": "npx react-scripts build",
-    "build:direct": "node build-direct.js",
-    "build:force": "chmod +x node_modules/.bin/react-scripts && react-scripts build",
+    "build": "node --max-old-space-size=4096 node_modules/.bin/react-scripts build",
+    "build:alt": "node --max-old-space-size=4096 node_modules/.bin/react-scripts build",
+    "build:direct": "node --max-old-space-size=4096 build-direct.js",
+    "build:force": "chmod +x node_modules/.bin/react-scripts && node --max-old-space-size=4096 node_modules/.bin/react-scripts build",
+    "build:low-memory": "GENERATE_SOURCEMAP=false node --max-old-space-size=2048 node_modules/.bin/react-scripts build",
+    "build:memory": "node build-memory.js",
+    "build:minimal": "node build-minimal.js",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve": "serve -s build -l 3000"
   },
   "eslintConfig": {
     "extends": [

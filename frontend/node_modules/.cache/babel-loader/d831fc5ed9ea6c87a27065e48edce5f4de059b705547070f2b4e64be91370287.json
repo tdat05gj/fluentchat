@@ -1,0 +1,1 @@
+{"ast":null,"code":"/**\n *  A constant for the zero hash.\n *\n *  (**i.e.** ``\"0x0000000000000000000000000000000000000000000000000000000000000000\"``)\n */\nexport const ZeroHash = \"0x0000000000000000000000000000000000000000000000000000000000000000\";\n//# sourceMappingURL=hashes.js.map","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
