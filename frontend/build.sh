@@ -3,8 +3,9 @@ set -e
 
 echo "🔧 Setting up Node.js build environment..."
 
-# Clean install
-npm ci
+# Use npm install instead of ci to handle lock file sync issues
+echo "📦 Installing dependencies..."
+npm install
 
 echo "🔧 Fixing permissions..."
 # Fix permissions for all binaries
