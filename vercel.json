@@ -3,7 +3,6 @@
   "outputDirectory": "frontend/build",
   "installCommand": "echo 'Skipping install, handled in buildCommand'",
   "framework": null,
-  "functions": {},
   "routes": [
     {
       "src": "/(.*)",
